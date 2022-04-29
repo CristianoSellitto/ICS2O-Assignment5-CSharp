@@ -18,19 +18,19 @@ class Program
         pi = (4 / number);
         while (numberOfIterations > 1)
         {
-          if (currentAction == "minus")
-          {
-            number = number + 2;
-            pi = pi - (4 / number);
-            currentAction = "plus";
-          }
-          else if (currentAction == "plus")
-          {
-            number = number + 2;
-            pi = pi + (4 / number);
-            currentAction = "minus";
-          }
-          numberOfIterations = numberOfIterations - 1;
+            if (currentAction == "minus")
+            {
+                number = number + 2;
+                pi = pi - (4 / number);
+                currentAction = "plus";
+            }
+            else if (currentAction == "plus")
+            {
+                number = number + 2;
+                pi = pi + (4 / number);
+                currentAction = "minus";
+            }
+            numberOfIterations = numberOfIterations - 1;
         }
         Console.WriteLine("π is equal to " + (pi).ToString("0.00"));
         Console.WriteLine("\nFinished.");
